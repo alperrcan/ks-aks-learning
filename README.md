@@ -9,23 +9,32 @@
 - **Basics**
   - **Subscription:** Free Trial
   - **Resource Group:** Creat New: aks-rg1
+  - **Cluster preset configuration:** Standard ($$)
   - **Kubernetes Cluster Name:** aksdemoks1
   - **Region:** (US) Central US
+  - **Availibilty zones** Uncheck zones make it none
+  - **AKS pricing tier** Free
   - **Kubernetes Version:** Select what ever is latest stable version
+  - **Automatix upgrade:** Left it default   
+- **Primary node pool**
   - **Node Size:** Standard DS2 v2 (Default one)
+  - **Scale Method:** Manual
   - **Node Count:** 1
 - **Node Pools**
   - leave to defaults
-- **Authentication**
-  - Authentication method: 	System-assigned managed identity
-  - Rest all leave to defaults
+- **Access**
+  - leave to defaults
 - **Networking**
-  - **Network Configuration:** Advanced
+  - **Network Configuration:** Azure CNI
   - **Network Policy:** Azure
   - Rest all leave to defaults
 - **Integrations**
   - Azure Container Registry: None
-  - leave to defaults
+  - **Azure Monitor**
+    Conatiner Monitoring: Disabled
+  - Rest all leave to defaults
+- **Advanced**
+  - Rest all leave to defaults
 - **Tags**
   - leave to defaults
 - **Review + Create**
