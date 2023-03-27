@@ -1,3 +1,5 @@
+# Prepare VS Code and Repo
+
 # Create AKS Cluster
 
 ## Step-01: Introduction
