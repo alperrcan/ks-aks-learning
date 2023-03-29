@@ -1,4 +1,4 @@
-# Kubernetes - ReplicaSets
+# Kubernetes - ReplicaSetss
 
 ## Step-01: Introduction to ReplicaSets
 - What are ReplicaSets?
