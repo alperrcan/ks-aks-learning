@@ -9,8 +9,8 @@
 ## Step-02: Create AKS Cluster
 - Create Kubernetes Cluster
 - **Basics**
-  - **Subscription:** Free Trial
-  - **Resource Group:** Creat New: aks-rg1
+  - **Subscription:** vs Enterprise
+  - **Resource Group:** Create New: aks-rg1-yourname
   - **Cluster preset configuration:** Standard ($$)
   - **Kubernetes Cluster Name:** aksdemoks1
   - **Region:** (US) Central US
@@ -50,7 +50,7 @@
 az aks get-credentials --resource-group <Resource-Group-Name> --name <Cluster-Name>
 
 # Replace Resource Group & Cluster Name
-az aks get-credentials --resource-group aks-rg1 --name aksdemoks1
+az aks get-credentials --resource-group aks-rg1-alper --name aksdemoks1
 
 # List Kubernetes Worker Nodes
 kubectl get nodes 
@@ -98,11 +98,17 @@ kubectl get all --all-namespaces
 
 ## Step-06: Local Desktop - Install Azure CLI and Azure AKS CLI
 ```
+# Install Azure CLI TO WSL
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+run <az> in ternminal you shold see az respond to command.
+close to terminal and open new one for activate auto complate.
+# Login to Azure
+az login --use-device-code
+
 # Install Azure CLI (MAC)
 brew update && brew install azure-cli
 
-# Login to Azure
-az login
+
 
 # Install Azure AKS CLI
 az aks install-cli
