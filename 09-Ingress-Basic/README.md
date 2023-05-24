@@ -33,7 +33,7 @@ az network public-ip create --resource-group MC_aks-rg1_aksdemo1_centralus --nam
 
 ## Step-03: Install Ingress Controller
 ```t
-# Install Helm3 (if not installed)
+# Install Helm3 (if not installed.)
 $ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
 $ chmod 700 get_helm.sh
 $ ./get_helm.sh
