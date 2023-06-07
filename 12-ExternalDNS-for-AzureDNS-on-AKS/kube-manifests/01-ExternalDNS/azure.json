@@ -1,0 +1,7 @@
+{
+  "tenantId": "acae0749-0588-4c42-a49b-26bfbab61995",
+  "subscriptionId": "a877426b-5ad5-4d21-98d9-fb390bfd3f34",
+  "resourceGroup": "Workshop-Temp", 
+  "useManagedIdentityExtension": true,
+  "userAssignedIdentityID": "ee930295-6ae0-43c9-917c-8f1f16e3d137"
+}
